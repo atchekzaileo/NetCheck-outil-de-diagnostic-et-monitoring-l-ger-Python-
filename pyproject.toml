@@ -12,6 +12,5 @@ requires-python = ">=3.10"
 [project.scripts]
 netcheck = "netcheck.cli:main"
 
-[tool.setuptools.packages.find]
-where = ["."]
-include = ["netcheck*"]
+[tool.setuptools]
+packages = ["netcheck"]
