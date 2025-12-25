@@ -1,0 +1,9 @@
+dns: example.com
+ping: 1.1.1.1
+tcp:
+  - "github.com:443"
+  - "1.1.1.1:53"
+http:
+  - "https://example.com"
+  - "https://github.com"
+tls: "github.com"
