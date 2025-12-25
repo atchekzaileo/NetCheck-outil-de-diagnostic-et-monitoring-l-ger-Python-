@@ -1,13 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "netcheck"
 version = "1.0.0"
-description = "Light network diagnostics: DNS, TCP, HTTP(S), TLS expiry, ping + JSON report"
+description = "Light network diagnostics: DNS, TCP, HTTP(S), TLS expiry"
 readme = "README.md"
 requires-python = ">=3.10"
-dependencies = []
 
 [project.scripts]
 netcheck = "netcheck.cli:main"
 
-[tool.pytest.ini_options]
-testpaths = ["tests"]
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["netcheck*"]
